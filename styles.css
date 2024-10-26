@@ -7,11 +7,11 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #ffe6e6; /* Light pink background */
+    background-color: #ffe6e6;
 }
 
 header {
-    background-color: #b30000; /* Dark red header */
+    background-color: #b30000; 
     color: #fff;
     padding: 15px 0;
 }
@@ -34,55 +34,53 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcccc; /* Light pink on hover */
+    color: #ffcccc;
 }
 
-/* Full-width pickle image wrapper */
 .full-width-img-wrapper {
-    width: 100%;          /* Full width of the container */
-    height: 420px;       /* Fixed height */
-    overflow: hidden;     /* Hides any overflow */
-    display: flex;        /* Use flexbox to center the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center;  /* Center vertically */
+    width: 100%;          
+    height: 420px;      
+    overflow: hidden;   
+    display: flex;       
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Full-width pickle image */
 .full-width-img {
-    width: 100%;         /* Fill the wrapper width */
-    height: 100%;        /* Fill the wrapper height */
-    object-fit: contain; /* Ensure the entire image fits without cropping */
-    display: block;      /* Prevents any gap below the image */
+    width: 100%;       
+    height: 100%;      
+    object-fit: contain;
+    display: block;   
 }
 
 .hero {
-    background-color: #f8f3ed; /* Light cream background for hero section */
+    background-color: #f8f3ed; 
     text-align: center;
-    padding: 20px 20px; /* Adjust padding for spacing */
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .hero-content {
-    margin-top: 20px; /* Add spacing between image and text */
+    margin-top: 20px; 
 }
 
 .hero-content h1 {
     font-size: 50px;
-    color: #b30000; /* Dark red for text */
-    text-shadow: 2px 2px 4px #d9d9d9; /* Soft shadow for better readability */
+    color: #b30000; 
+    text-shadow: 2px 2px 4px #d9d9d9; 
 }
 
 .hero-content p {
     font-size: 22px;
     margin-bottom: 30px;
-    color: #b30000; /* Dark red text */
+    color: #b30000;
 }
 
 .cta-button {
     padding: 15px 35px;
-    background-color: #ff6666; /* Light red for buttons */
+    background-color: #ff6666; 
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -91,50 +89,49 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e60000; /* Darker red on hover */
+    background-color: #e60000; 
 }
 
-/* Introduction Section */
 .introduction-section {
     padding: 50px;
     text-align: center;
-    background-color: #ffe6e6; /* Light pink background */
+    background-color: #ffe6e6; 
 }
 
 .introduction-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #b30000; /* Dark red color */
+    color: #b30000;
 }
 
 .introduction-section p {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #333; /* Dark gray color for text */
+    color: #333; 
 }
 
 /* Details Section */
 .details-section {
     padding: 50px;
     text-align: center;
-    background-color: #ffe6e6; /* Light pink background */
+    background-color: #ffe6e6; 
 }
 
 .details-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #b30000; /* Dark red */
+    color: #b30000; 
 }
 
 .details-section p {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #333; /* Dark gray for readability */
+    color: #333; 
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #b30000; /* Dark red footer */
+    background-color: #b30000; 
     color: white;
 }
