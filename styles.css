@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6e6; /* Light pink background */
+}
+
+header {
+    background-color: #b30000; /* Dark red header */
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcccc; /* Light pink on hover */
+}
+
+/* Full-width pickle image wrapper */
+.full-width-img-wrapper {
+    width: 100%;          /* Full width of the container */
+    height: 420px;       /* Fixed height */
+    overflow: hidden;     /* Hides any overflow */
+    display: flex;        /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center;  /* Center vertically */
+}
+
+/* Full-width pickle image */
+.full-width-img {
+    width: 100%;         /* Fill the wrapper width */
+    height: 100%;        /* Fill the wrapper height */
+    object-fit: contain; /* Ensure the entire image fits without cropping */
+    display: block;      /* Prevents any gap below the image */
+}
+
+.hero {
+    background-color: #f8f3ed; /* Light cream background for hero section */
+    text-align: center;
+    padding: 20px 20px; /* Adjust padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    margin-top: 20px; /* Add spacing between image and text */
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #b30000; /* Dark red for text */
+    text-shadow: 2px 2px 4px #d9d9d9; /* Soft shadow for better readability */
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #b30000; /* Dark red text */
+}
+
+.cta-button {
+    padding: 15px 35px;
+    background-color: #ff6666; /* Light red for buttons */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Introduction Section */
+.introduction-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffe6e6; /* Light pink background */
+}
+
+.introduction-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #b30000; /* Dark red color */
+}
+
+.introduction-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray color for text */
+}
+
+/* Details Section */
+.details-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffe6e6; /* Light pink background */
+}
+
+.details-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #b30000; /* Dark red */
+}
+
+.details-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray for readability */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b30000; /* Dark red footer */
+    color: white;
+}

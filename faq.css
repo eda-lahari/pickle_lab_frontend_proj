@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6e6; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+header {
+    background-color: #b30000; /* Dark red header */
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcccc; /* Light pink on hover */
+}
+
+.faq-container {
+    flex: 1; /* Allows the container to grow and fill available space */
+    padding: 20px; /* Add some padding around the FAQ content */
+    padding-bottom: 80px; /* Add space at the bottom for the footer */
+}
+
+.faq-item {
+    margin-bottom: 15px; /* Space between FAQ items */
+}
+
+.faq-question {
+    background-color: #f8f3ed; /* Light cream background for questions */
+    padding: 15px; /* Padding for better click area */
+    border: 1px solid #ccc; /* Light border */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    position: relative; /* Positioning for arrow */
+}
+
+.faq-answer {
+    display: none; /* Hide answers by default */
+    padding: 15px;
+    border: 1px solid #ccc; /* Light border */
+    margin-top: 5px; /* Space between question and answer */
+}
+
+.arrow {
+    position: absolute;
+    right: 15px; /* Align arrow to the right */
+    top: 15px; /* Align arrow vertically centered */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b30000; /* Dark red footer */
+    color: white;
+    position: relative; /* Ensure footer stays at the bottom */
+}

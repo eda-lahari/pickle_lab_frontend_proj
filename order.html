@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pickles - PickleLab</title>
+    <link rel="stylesheet" href="order.css"> <!-- Link to the external CSS file -->
+    <script defer src="order.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="login.html">Login</a></li> 
+        </ul>
+    </nav>
+</header>
+
+<div class="order-container">
+    <h2>Pickle Varieties</h2>
+    <div class="category">
+        <h3>Veg Pickles</h3>
+        <div class="pickle-grid">
+            <div class="pickle-card">
+                <img src="mango-pickle.jpg" alt="Mango Pickle">
+                <h4>Mango Pickle</h4>
+                <button class="buy-button" onclick="openModal('mango', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('mango', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="lemon-pickle.jpg" alt="Lemon Pickle">
+                <h4>Lemon Pickle</h4>
+                <button class="buy-button" onclick="openModal('lemon', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('lemon', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="ginger-pickle.jpg" alt="Ginger Pickle">
+                <h4>Ginger Pickle</h4>
+                <button class="buy-button" onclick="openModal('ginger', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('ginger', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="gongura-pickle.jpg" alt="Gongura Pickle">
+                <h4>Gongura Pickle</h4>
+                <button class="buy-button" onclick="openModal('gongura', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('gongura', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="red chilli-pickle.jpg" alt="Red Chilli Pickle">
+                <h4>Red Chilli Pickle</h4>
+                <button class="buy-button" onclick="openModal('redchilli', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('redchilli', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="tomato-pickle.jpg" alt="Tomato Pickle">
+                <h4>Tomato Pickle</h4>
+                <button class="buy-button" onclick="openModal('tomato', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('tomato', false)">Review</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3>Non-Veg Pickles</h3>
+        <div class="pickle-grid">
+            <div class="pickle-card">
+                <img src="chicken-pickle.jpeg" alt="Chicken Pickle">
+                <h4>Chicken Pickle</h4>
+                <button class="buy-button" onclick="openModal('chicken', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('chicken', false)">Review</button>
+            </div>
+            <div class="pickle-card">
+                <img src="prawns-pickle.jpg" alt="Prawns Pickle">
+                <h4>Prawns Pickle</h4>
+                <button class="buy-button " onclick ="openModal('prawns', true)">Buy Now</button>
+                <button class="review-button" onclick="openModal('prawns', false)">Review</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div id="review-section">
+            <form id="review-form">
+                <textarea id="review-text" placeholder="Write your review..."></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="reviews"></div>
+        </div>
+        <button id="buy-now-button" class="buy-now-button">Buy Now</button>
+    </div>
+</div>
+
+</body>
+</html>
