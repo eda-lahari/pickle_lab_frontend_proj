@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6e6; /* Light pink background */
+}
+
+header {
+    background-color: #b30000; /* Dark red header */
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcccc; /* Light pink on hover */
+}
+
+.process-section {
+    padding: 50px;
+    max-width: 1200px; /* Maximum width for better alignment */
+    margin: 0 auto; /* Center the section */
+}
+
+.process-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #b30000; /* Dark red */
+    text-align: center;
+}
+
+.process-section p {
+    font-size: 18px;
+    margin-bottom: 30px; /* Increased bottom margin for spacing */
+    color: #333; /* Dark gray for readability */
+    text-align: center;
+}
+
+.process-block {
+    background-color: #ffcccc; /* Light red for process blocks */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    width: 100%; /* Full width */
+}
+
+.process-block h2 {
+    font-size: 24px;
+    color: #b30000; /* Dark red for headings */
+    text-align: center; /* Center heading */
+}
+
+.process-block p {
+    font-size: 16px;
+    color: #333; /* Dark gray for text */
+    text-align: left; /* Left-align description */
+    margin-left: 20px; /* Left margin for tab space */
+    margin-right: 20px; /* Right margin for spacing */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b30000; /* Dark red footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Make footer take full width */
+}
