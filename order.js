@@ -9,48 +9,51 @@ let modalDescription = document.getElementById("modal-description");
 let pickleTypes = {
     mango: {
         name: "Mango Pickle",
-        description: "Sweet and tangy, our Mango Pickle is a perfect blend of flavors."
+        description: "Indulge in the tropical goodness of our Mango Pickle. Bursting with the sweetness of ripe mangoes and a hint of spice, this pickle is a perfect accompaniment to any meal or a delightful snack on its own."
     },
     lemon: {
         name: "Lemon Pickle",
-        description: "Sour and spicy, our Lemon Pickle is a great addition to any meal."
+        description: "Experience the zesty tang of our Lemon Pickle! Made with sun-ripened lemons and a blend of spices, this pickle offers a refreshing burst of flavor that elevates your dishes and tantalizes your taste buds."
     },
     ginger: {
         name: "Ginger Pickle",
-        description: "Spicy and aromatic, our Ginger Pickle is a flavorful delight."
+        description: "Awaken your senses with our Ginger Pickle! This tangy and spicy delight combines the warmth of fresh ginger with a medley of spices, creating a pickle that's perfect for adding a kick to your meals or enjoying straight from the jar."
     },
     gongura: {
         name: "Gongura Pickle",
-        description: "Tangy and slightly sweet, our Gongura Pickle is a popular choice."
+        description: "Savor the unique flavor of our Gongura Pickle, made from the tangy gongura leaves. This pickle is a delightful blend of sour and spicy, making it a fantastic addition to rice or as a side dish that will leave you craving more."
     },
     redchilli: {
         name: "Red Chilli Pickle",
-        description: "Spicy and bold, our Red Chilli Pickle is not for the faint of heart."
+        description: "For the spice lovers, our Red Chilli Pickle is a must-try! Bursting with fiery flavors and a perfect balance of heat, this pickle is ideal for adding a bold kick to your meals. Dare to spice up your life!"
     },
     tomato: {
         name: "Tomato Pickle",
-        description: "Sweet and tangy, our Tomato Pickle is a great accompaniment to any dish."
+        description: "Enjoy the rich and tangy flavor of our Tomato Pickle! Made from the freshest tomatoes and a blend of spices, this pickle is perfect for enhancing your sandwiches, rice dishes, or simply enjoying as a snack."
     },
     chicken: {
         name: "Chicken Pickle",
-        description: "Savory and spicy, our Chicken Pickle is a meat lover's delight."
+        description: "Delight in the savory goodness of our Chicken Pickle! Infused with aromatic spices and tender chicken, this pickle is a unique treat that pairs wonderfully with rice or can be enjoyed straight from the jar."
     },
     prawns: {
         name: "Prawns Pickle",
-        description: "Sweet and spicy, our Prawns Pickle is a seafood lover's dream."
+        description: "Indulge in the exotic flavors of our Prawns Pickle. This spicy and tangy pickle features succulent prawns marinated in a blend of spices, making it a delectable addition to any meal or a perfect snack for seafood lovers."
     }
 };
 
 function openModal(pickleType, showBuyButton) {
     modal.style.display = "block";
     document.getElementById("modal-title").innerHTML = pickleTypes[pickleType].name;
+
     if (showBuyButton) {
         modalDescription.innerHTML = pickleTypes[pickleType].description;
         document.getElementById("buy-now-button").style.display = "block";
         document.getElementById("review-section").style.display = "none";
     } else {
+        modalDescription.innerHTML = ""; // Clear the description
         document.getElementById("buy-now-button").style.display = "none";
         document.getElementById("review-section").style.display = "block";
+        document.getElementById("modal-title").innerHTML = `Review ${pickleTypes[pickleType].name}`;
     }
 }
 
